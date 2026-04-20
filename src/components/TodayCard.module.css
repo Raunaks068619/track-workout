@@ -1,0 +1,53 @@
+.card {
+  background: linear-gradient(160deg, #0d2547 0%, #0a1530 60%, #06091a 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top right,
+    rgba(59, 130, 246, 0.18),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.rest {
+  background: linear-gradient(160deg, #1a1a1a 0%, #0d0d0d 100%);
+}
+
+.label {
+  color: var(--text-dim);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.focus {
+  color: var(--text-dim);
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.meta {
+  color: var(--text-mute);
+  font-size: 13px;
+  margin-top: var(--sp-2);
+}
