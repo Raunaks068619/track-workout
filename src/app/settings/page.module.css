@@ -1,0 +1,194 @@
+.main {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: max(var(--sp-5), env(safe-area-inset-top)) var(--sp-4)
+    max(var(--sp-7), env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.backBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--text-dim);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-mute);
+}
+
+.note {
+  font-size: 13px;
+  color: var(--text-mute);
+  line-height: 1.5;
+}
+
+.btnRow {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.ghostBtn,
+.linkBtn {
+  border-radius: var(--r-md);
+  font-size: 14px;
+  font-weight: 600;
+  padding: var(--sp-3) var(--sp-4);
+}
+
+.primaryBtn {
+  background: var(--accent);
+  color: #fff;
+}
+
+.ghostBtn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.linkBtn {
+  background: transparent;
+  color: var(--text-dim);
+  padding: 0;
+  font-size: 13px;
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+}
+
+.status {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.row {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--sp-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.rowHead {
+  display: flex;
+  gap: var(--sp-2);
+  align-items: center;
+}
+
+.labelInput {
+  flex: 1;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: var(--sp-2) var(--sp-3);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  min-width: 0;
+}
+
+.timeInput {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: var(--sp-2) var(--sp-3);
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  color-scheme: dark;
+}
+
+.rowControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  align-items: center;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: 14px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+
+.toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.selectWrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.selectLabel {
+  font-size: 13px;
+}
+
+.select {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: var(--sp-1) var(--sp-2);
+  font-size: 14px;
+  color: var(--text);
+  color-scheme: dark;
+}
