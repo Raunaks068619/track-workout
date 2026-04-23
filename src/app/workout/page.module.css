@@ -51,13 +51,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: var(--sp-4);
   padding: var(--sp-5) var(--sp-2);
   text-align: left;
   max-width: 560px;
   width: 100%;
   margin: 0 auto;
+  overflow-y: auto;
 }
 
 .category {
