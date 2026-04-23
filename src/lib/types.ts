@@ -18,6 +18,7 @@ export interface Exercise {
   rir?: number;
   cue: string;
   category: ExerciseCategory;
+  videoId?: string;
 }
 
 export interface Workout {

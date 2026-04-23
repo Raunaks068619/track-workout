@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import styles from './page.module.css';
 import { getTodaysWorkout } from '@/lib/dayResolver';
 import { ExerciseListModal } from '@/components/ExerciseListModal';
+import { VideoEmbed } from '@/components/VideoEmbed';
 import type { Workout } from '@/lib/types';
 
 export default function WorkoutPage() {
@@ -126,6 +127,11 @@ export default function WorkoutPage() {
           {typeof current.rir === 'number' ? ` • RIR ${current.rir}` : ''}
         </p>
         <p className={styles.cue}>{current.cue}</p>
+        <VideoEmbed
+          key={current.id}
+          videoId={current.videoId}
+          title={current.name}
+        />
       </section>
 
       <div className={styles.bottom}>
